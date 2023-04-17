@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Modern_Art_UI</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_more_information">More Information</string>
+
+    <string name="visitmoma">Visit Moma</string>
+    <string name="notnow">Not Now</string>
+</resources>

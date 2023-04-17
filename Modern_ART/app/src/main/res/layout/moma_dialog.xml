@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/holo_blue_dark"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/visit_moma"
+        android:layout_width="223dp"
+        android:layout_height="66dp"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:paddingBottom="14dp"
+        android:text="@string/visitmoma"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/not_now"
+        android:layout_width="223dp"
+        android:layout_height="66dp"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="@string/notnow"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>
