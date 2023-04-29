@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="userName" type="id" />
+    <item name="userAlert" type="id" />
+    <item name="userPassword" type="id" />
+    <item name="userAddhar" type="id" />
+    <item name="userContact" type="id" />
+    <item name="Male" type="id" />
+    <item name="Female" type="id" />
+    <item name="other" type="id" />
+    <item name="usercomment" type="id" />
+    <item name="btnSubmit" type="id" />
+</resources>
