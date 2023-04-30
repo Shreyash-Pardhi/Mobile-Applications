@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".LoginActivity"><![CDATA[
+
+  ;
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/pass"
+      app:layout_constraintVertical_bias="0.893" />
+
+
+
+
+
+
+
+
+
+  ]]>
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="355dp"
+      android:layout_height="57dp"
+      android:layout_marginTop="132dp"
+      android:onClick="login"
+      android:text="Login"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/pass"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <EditText
+      android:id="@+id/uid"
+      android:layout_width="329dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="112dp"
+      android:ems="10"
+      android:hint="User ID"
+      android:inputType="textPersonName"
+      android:textColor="#FFFFFF"
+      android:textColorHint="#A8A8A8"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+  <EditText
+      android:id="@+id/pass"
+      android:layout_width="331dp"
+      android:layout_height="51dp"
+      android:layout_marginTop="28dp"
+      android:ems="10"
+      android:hint="Password"
+      android:inputType="textPassword"
+      android:textColor="#ffffff"
+      android:textColorHint="#A8A8A8"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.512"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/uid" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="183dp"
+      android:layout_height="158dp"
+      android:layout_marginTop="56dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
