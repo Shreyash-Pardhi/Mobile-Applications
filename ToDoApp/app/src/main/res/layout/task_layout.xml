@@ -15,11 +15,10 @@
         <com.google.android.material.checkbox.MaterialCheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/design_default_color_primary_dark"
+            android:buttonTint="@color/yellow"
             android:id="@+id/chkbox"
             android:text="Task 1"
-            android:paddingStart="8dp"
-            />
+            android:paddingStart="8dp"/>
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

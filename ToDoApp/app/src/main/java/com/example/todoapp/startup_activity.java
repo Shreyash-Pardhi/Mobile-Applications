@@ -20,6 +20,6 @@ public class startup_activity extends AppCompatActivity {
                 startActivity(new Intent(startup_activity.this, MainActivity.class));
                 finish();
             }
-        } , 4000);
+        } , 900);
     }
 }

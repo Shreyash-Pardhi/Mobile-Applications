@@ -10,6 +10,7 @@ import android.widget.CompoundButton;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.todoapp.AddNewTask;
 import com.example.todoapp.MainActivity;
 import com.example.todoapp.Model.ToDoModel;
 import com.example.todoapp.R;
@@ -78,7 +79,10 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.MyViewHolder> 
         Bundle bundle = new Bundle();
         bundle.putInt("id", item.getId());
         bundle.putString("task", item.getTask());
-        
+
+        AddNewTask task = new AddNewTask();
+        task.setArguments(bundle);
+        task.show(activity.getSupportFragmentManager(), task.getTag());
     }
 
     @Override
