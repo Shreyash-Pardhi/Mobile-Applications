@@ -13,6 +13,22 @@
         android:theme="@style/Theme.Cabcom"
         tools:targetApi="31">
         <activity
+            android:name=".Sign_in"
+            android:exported="false"
+            android:theme="@style/Theme.Cabcom.NoActionBarAndStatus">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Sign_up"
+            android:exported="false"
+            android:theme="@style/Theme.Cabcom.NoActionBarAndStatus">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".startup"
             android:exported="true"
             android:theme="@style/Theme.Cabcom.NoActionBarAndStatus">
@@ -21,6 +37,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

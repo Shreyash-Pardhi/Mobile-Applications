@@ -17,7 +17,7 @@ public class startup extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(startup.this, MainActivity.class));
+                startActivity(new Intent(startup.this, Sign_in.class));
                 finish();
             }
         } , 3000);
