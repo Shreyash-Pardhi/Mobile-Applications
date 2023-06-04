@@ -1,5 +1,6 @@
 package com.example.memehub
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    var currentIMGurl : String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -32,15 +35,14 @@ class MainActivity : AppCompatActivity() {
 
         progress.visibility = ProgressBar.VISIBLE
         // Instantiate the RequestQueue.
-        val queue = Volley.newRequestQueue(this)
         val url = "https://meme-api.com/gimme"
 
         // Request a string response from the provided URL.
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET, url, null,
             Response.Listener{ response ->
-                val url = response.getString("url")
-                Glide.with(this).load(url).listener(object:RequestListener<Drawable>{
+                currentIMGurl = response.getString("url")
+                Glide.with(this).load(currentIMGurl).listener(object:RequestListener<Drawable>{
                     override fun onLoadFailed(
                         e: GlideException?,
                         model: Any?,
@@ -69,12 +71,15 @@ class MainActivity : AppCompatActivity() {
             })
 
         // Add the request to the RequestQueue.
-        queue.add(jsonObjectRequest)
+        MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest)
     }
 
     fun shareIt(view: View)
     {
-
+        val intent=Intent(Intent.ACTION_SEND)
+        intent.type="text/plain"
+        intent.putExtra(Intent.EXTRA_TEXT, "Checkout this meme $currentIMGurl")
+        startActivity(intent)
     }
 
     fun nextBTN(view: View)
